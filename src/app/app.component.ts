@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  title = 'app works! and has been modified twice....';
+
+  getReversed(str: string){
+    let reversed = '';
+    for (let i=str.length-1; i>=0; i--){
+      reversed += str.substring(i,i+1);
+    }
+    return reversed;
+  }
+
 }
